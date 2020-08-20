@@ -10,8 +10,7 @@ assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);
 
 const countLetters = function(sentence){
-  let ltts = sentence.length; 
-    // how do i create an object with the cats and dogs
+ 
     const output = {};
     // figure out how am i going to loop through a string of words? X
     for (let char of sentence.split(" ").join("")) {
