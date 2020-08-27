@@ -5,14 +5,14 @@ const assert = require('chai').assert;
 const middle = require('../middle');
 
 describe("#middle", () => {
-  it("returns '' for ['1']", () => {
-    assert.strictEqual(middle([1]), '');
-  });it("returns 2 for [1,2,3]",() => {
-    assert.strictEqual(middle([1, 2, 3]), 2); 
+  it("returns [] for [1]", () => {
+    assert.deepEqual(middle([1]), []);
+  });it("returns [2] for [1,2,3]",() => {
+    assert.deepEqual(middle([1, 2, 3]), [2]); 
   });
 });
 
-console.log(middle([1])) // => []
+middle([1]) // => []
 middle([1, 2, 3]) // => [2]
 
 /* TEST CODE
